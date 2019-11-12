@@ -36,9 +36,10 @@ class Contador extends React.Component {
 
   render() {
     return (
-      // {this.state.visivel === true ? '' : }
       <div>
         <p>{this.state.contador}</p>
+        <button onClick={this.alternaVisibilidade}>
+        {this.state.visivel === true ? "Fechar Contador" :"Abrir Contador" }</button>
         <button className="btnMaisUm" onClick={this.adicionarUm}>+1</button>
         <button className="btnMenosUm" onClick={this.subtraiUm}>-1</button>
         <button className="btnResetar" onClick={this.resetar}>resetar</button>
